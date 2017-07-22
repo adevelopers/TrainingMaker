@@ -11,17 +11,25 @@ import Alamofire
 
 class Uploader {
     
-    class func upload(file: URL, to serverUrl: String, fileName: String = "data.txt") {
+    class func upload(files: [URL], to serverUrl: String, fileName: String = "data.txt") {
         let parameters = [
             "action":"add",
             "etalon_id":"1",
             "name":"benzol2",
-            "file_name": "data.txt"
+            "file_name": "data.bin"
         ]
         
         DispatchQueue.main.async {
             Alamofire.upload(multipartFormData: { (multipartFormData) in
-                multipartFormData.append(file, withName: "uploadFile", fileName: fileName, mimeType: "text/plain")
+                
+                if let fileBin = files.first {
+                    multipartFormData.append(fileBin, withName: "uploadFile", fileName: "data.bin", mimeType: "text/plain")
+                }
+                
+                if let fileImage = files.last {
+                    multipartFormData.append(fileImage, withName: "image", fileName: "image.png", mimeType: "text/plain")
+                }
+                
                 for (key, value) in parameters {
                     multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
                 }
