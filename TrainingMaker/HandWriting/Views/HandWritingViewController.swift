@@ -275,18 +275,17 @@ extension HandWritingViewController {
         // Extract and resize image from drawing canvas
         guard let imageArray = scanImage() else { return }
         
-        if let image = mainView.networkInputCanvas.image {
-            if let data = UIImagePNGRepresentation(image) {
-                let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-                let documentsDirectory = paths.first
-                let filename = documentsDirectory?.appendingPathComponent("trainingImage.png")
-                try? data.write(to: filename!)
-            }
-        }
+        guard let image = mainView.networkInputCanvas.image else { return }
+        guard let data = UIImagePNGRepresentation(image) else { return }
+        
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths.first
+        guard let filename = documentsDirectory?.appendingPathComponent("trainingImage.png") else { return }
+        try? data.write(to: filename)
         
         if let fileUrl = TrainSaver().save(with: imageArray) {
             let server = "http://chemnote.dev/api/"
-            Uploader.upload(file: fileUrl, to: server, fileName: "data.txt")
+            Uploader.upload(files: [fileUrl, filename], to: server, fileName: "data.txt")
             print("path: \(fileUrl)")
         }
         
