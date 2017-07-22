@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71371F741F23662400C95A7F /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71371F731F23662400C95A7F /* Uploader.swift */; };
 		719B95DB1F223C3000FCAE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DA1F223C3000FCAE45 /* AppDelegate.swift */; };
 		719B95DD1F223C3000FCAE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DC1F223C3000FCAE45 /* ViewController.swift */; };
 		719B95E01F223C3000FCAE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719B95DE1F223C3000FCAE45 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71371F731F23662400C95A7F /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 		719B95D71F223C3000FCAE45 /* TrainingMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719B95DA1F223C3000FCAE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719B95DC1F223C3000FCAE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719B95DD1F223C3000FCAE45 /* ViewController.swift in Sources */,
+				71371F741F23662400C95A7F /* Uploader.swift in Sources */,
 				719B95DB1F223C3000FCAE45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
