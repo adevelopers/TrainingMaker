@@ -9,6 +9,8 @@ target 'TrainingMaker' do
   #  pod 'SnapKit', '3.2.0'
   #  pod 'Moya', '8.0.5'
   pod 'Alamofire', '4.4'
+  pod 'FileKit', '4.0.1'
+  pod 'SnapKit', '3.2.0'
   
 
 end

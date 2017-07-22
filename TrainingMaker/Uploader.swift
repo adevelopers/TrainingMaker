@@ -15,6 +15,7 @@ class Uploader {
         let parameters = [
             "action":"add",
             "etalon_id":"1",
+            "name":"benzol2",
             "file_name": "data.txt"
         ]
         
