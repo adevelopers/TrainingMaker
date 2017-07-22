@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func sendToServer(_ sender: UIButton) {
+        sendFileToServer()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        sendFileToServer()
     }
+    
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController {
+    
+    
+    func makeFile() {
+        
     }
-
-
+    
+    func sendFileToServer() {
+        let urlFile = Bundle.main.url(forResource:"data", withExtension: "txt")
+        let server = "http://chemnote.dev/api/"
+        
+        if let file = urlFile {
+            Uploader.upload(file: file, to: server, fileName: "data.txt")
+        }
+    }
+    
 }
 

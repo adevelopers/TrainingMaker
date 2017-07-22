@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ED718E0C134CEABC9C1A551 /* Pods_TrainingMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094356845DAB3FCCF8D6694 /* Pods_TrainingMaker.framework */; };
 		71371F741F23662400C95A7F /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71371F731F23662400C95A7F /* Uploader.swift */; };
 		719B95DB1F223C3000FCAE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DA1F223C3000FCAE45 /* AppDelegate.swift */; };
 		719B95DD1F223C3000FCAE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DC1F223C3000FCAE45 /* ViewController.swift */; };
 		719B95E01F223C3000FCAE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719B95DE1F223C3000FCAE45 /* Main.storyboard */; };
 		719B95E21F223C3000FCAE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719B95E11F223C3000FCAE45 /* Assets.xcassets */; };
 		719B95E51F223C3000FCAE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719B95E31F223C3000FCAE45 /* LaunchScreen.storyboard */; };
+		719B95ED1F22449600FCAE45 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 719B95EC1F22449600FCAE45 /* data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		367B6AD319095DC9EF02C667 /* Pods-TrainingMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainingMaker/Pods-TrainingMaker.release.xcconfig"; sourceTree = "<group>"; };
+		7094356845DAB3FCCF8D6694 /* Pods_TrainingMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71371F731F23662400C95A7F /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
 		719B95D71F223C3000FCAE45 /* TrainingMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719B95DA1F223C3000FCAE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		719B95E11F223C3000FCAE45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		719B95E41F223C3000FCAE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719B95E61F223C3000FCAE45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719B95EC1F22449600FCAE45 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		C0DA8CF957C767660D3B6503 /* Pods-TrainingMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingMaker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainingMaker/Pods-TrainingMaker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ED718E0C134CEABC9C1A551 /* Pods_TrainingMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569A31794B2F97FEA06A8CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7094356845DAB3FCCF8D6694 /* Pods_TrainingMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		719B95CE1F223C3000FCAE45 = {
 			isa = PBXGroup;
 			children = (
 				719B95D91F223C3000FCAE45 /* TrainingMaker */,
 				719B95D81F223C3000FCAE45 /* Products */,
+				71D876E4E1E24307D6A4D3DB /* Pods */,
+				569A31794B2F97FEA06A8CF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,8 +79,19 @@
 				719B95E11F223C3000FCAE45 /* Assets.xcassets */,
 				719B95E31F223C3000FCAE45 /* LaunchScreen.storyboard */,
 				719B95E61F223C3000FCAE45 /* Info.plist */,
+				719B95EC1F22449600FCAE45 /* data.txt */,
+				71371F731F23662400C95A7F /* Uploader.swift */,
 			);
 			path = TrainingMaker;
+			sourceTree = "<group>";
+		};
+		71D876E4E1E24307D6A4D3DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0DA8CF957C767660D3B6503 /* Pods-TrainingMaker.debug.xcconfig */,
+				367B6AD319095DC9EF02C667 /* Pods-TrainingMaker.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 719B95E91F223C3000FCAE45 /* Build configuration list for PBXNativeTarget "TrainingMaker" */;
 			buildPhases = (
+				BA190F0B3F8B0517268D6C5B /* [CP] Check Pods Manifest.lock */,
 				719B95D31F223C3000FCAE45 /* Sources */,
 				719B95D41F223C3000FCAE45 /* Frameworks */,
 				719B95D51F223C3000FCAE45 /* Resources */,
+				3458F587076CF3115E5A2377 /* [CP] Embed Pods Frameworks */,
+				D9912176810863861EBBA7D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719B95ED1F22449600FCAE45 /* data.txt in Resources */,
 				719B95E51F223C3000FCAE45 /* LaunchScreen.storyboard in Resources */,
 				719B95E21F223C3000FCAE45 /* Assets.xcassets in Resources */,
 				719B95E01F223C3000FCAE45 /* Main.storyboard in Resources */,
@@ -133,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3458F587076CF3115E5A2377 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainingMaker/Pods-TrainingMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA190F0B3F8B0517268D6C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9912176810863861EBBA7D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainingMaker/Pods-TrainingMaker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		719B95D31F223C3000FCAE45 /* Sources */ = {
@@ -264,6 +344,7 @@
 		};
 		719B95EA1F223C3000FCAE45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0DA8CF957C767660D3B6503 /* Pods-TrainingMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF42FG352F;
@@ -277,6 +358,7 @@
 		};
 		719B95EB1F223C3000FCAE45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 367B6AD319095DC9EF02C667 /* Pods-TrainingMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF42FG352F;
@@ -307,6 +389,7 @@
 				719B95EB1F223C3000FCAE45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
