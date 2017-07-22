@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0ED718E0C134CEABC9C1A551 /* Pods_TrainingMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7094356845DAB3FCCF8D6694 /* Pods_TrainingMaker.framework */; };
 		71371F741F23662400C95A7F /* Uploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71371F731F23662400C95A7F /* Uploader.swift */; };
+		719A67801F238AC20063D9C4 /* TrainSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A677B1F238AC20063D9C4 /* TrainSaver.swift */; };
+		719A67811F238AC20063D9C4 /* HandWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A677D1F238AC20063D9C4 /* HandWriteView.swift */; };
+		719A67821F238AC20063D9C4 /* HandWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A677E1F238AC20063D9C4 /* HandWritingViewController.swift */; };
+		719A67831F238AC20063D9C4 /* ProtoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A677F1F238AC20063D9C4 /* ProtoView.swift */; };
+		719A67851F238BBE0063D9C4 /* Settable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A67841F238BBE0063D9C4 /* Settable.swift */; };
+		719A67871F238BCB0063D9C4 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719A67861F238BCB0063D9C4 /* UIColor+hex.swift */; };
 		719B95DB1F223C3000FCAE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DA1F223C3000FCAE45 /* AppDelegate.swift */; };
 		719B95DD1F223C3000FCAE45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B95DC1F223C3000FCAE45 /* ViewController.swift */; };
 		719B95E01F223C3000FCAE45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719B95DE1F223C3000FCAE45 /* Main.storyboard */; };
@@ -21,6 +27,12 @@
 		367B6AD319095DC9EF02C667 /* Pods-TrainingMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingMaker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainingMaker/Pods-TrainingMaker.release.xcconfig"; sourceTree = "<group>"; };
 		7094356845DAB3FCCF8D6694 /* Pods_TrainingMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71371F731F23662400C95A7F /* Uploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uploader.swift; sourceTree = "<group>"; };
+		719A677B1F238AC20063D9C4 /* TrainSaver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainSaver.swift; sourceTree = "<group>"; };
+		719A677D1F238AC20063D9C4 /* HandWriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandWriteView.swift; sourceTree = "<group>"; };
+		719A677E1F238AC20063D9C4 /* HandWritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandWritingViewController.swift; sourceTree = "<group>"; };
+		719A677F1F238AC20063D9C4 /* ProtoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtoView.swift; sourceTree = "<group>"; };
+		719A67841F238BBE0063D9C4 /* Settable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settable.swift; sourceTree = "<group>"; };
+		719A67861F238BCB0063D9C4 /* UIColor+hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		719B95D71F223C3000FCAE45 /* TrainingMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719B95DA1F223C3000FCAE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719B95DC1F223C3000FCAE45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +64,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		719A677A1F238AC20063D9C4 /* HandWriting */ = {
+			isa = PBXGroup;
+			children = (
+				719A677B1F238AC20063D9C4 /* TrainSaver.swift */,
+				719A677C1F238AC20063D9C4 /* Views */,
+			);
+			path = HandWriting;
+			sourceTree = "<group>";
+		};
+		719A677C1F238AC20063D9C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				719A677D1F238AC20063D9C4 /* HandWriteView.swift */,
+				719A677E1F238AC20063D9C4 /* HandWritingViewController.swift */,
+				719A677F1F238AC20063D9C4 /* ProtoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		719B95CE1F223C3000FCAE45 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +104,7 @@
 		719B95D91F223C3000FCAE45 /* TrainingMaker */ = {
 			isa = PBXGroup;
 			children = (
+				719A677A1F238AC20063D9C4 /* HandWriting */,
 				719B95DA1F223C3000FCAE45 /* AppDelegate.swift */,
 				719B95DC1F223C3000FCAE45 /* ViewController.swift */,
 				719B95DE1F223C3000FCAE45 /* Main.storyboard */,
@@ -80,6 +112,8 @@
 				719B95E31F223C3000FCAE45 /* LaunchScreen.storyboard */,
 				719B95E61F223C3000FCAE45 /* Info.plist */,
 				719B95EC1F22449600FCAE45 /* data.txt */,
+				719A67841F238BBE0063D9C4 /* Settable.swift */,
+				719A67861F238BCB0063D9C4 /* UIColor+hex.swift */,
 				71371F731F23662400C95A7F /* Uploader.swift */,
 			);
 			path = TrainingMaker;
@@ -221,6 +255,12 @@
 			files = (
 				719B95DD1F223C3000FCAE45 /* ViewController.swift in Sources */,
 				71371F741F23662400C95A7F /* Uploader.swift in Sources */,
+				719A67831F238AC20063D9C4 /* ProtoView.swift in Sources */,
+				719A67811F238AC20063D9C4 /* HandWriteView.swift in Sources */,
+				719A67801F238AC20063D9C4 /* TrainSaver.swift in Sources */,
+				719A67851F238BBE0063D9C4 /* Settable.swift in Sources */,
+				719A67871F238BCB0063D9C4 /* UIColor+hex.swift in Sources */,
+				719A67821F238AC20063D9C4 /* HandWritingViewController.swift in Sources */,
 				719B95DB1F223C3000FCAE45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
